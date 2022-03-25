@@ -1,0 +1,807 @@
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Mulish', sans-serif; */
+}
+.tegs a:hover{
+    opacity: 0.3;
+    transition: 0.3s;
+}
+a{
+    text-decoration: none;
+}
+.navbar a{
+    text-transform: uppercase;
+    font-size: 14px;
+    color:white;
+    font-weight: bold;
+}
+.navbar a:hover{
+    color:#12BF77;
+    transition: .3s;
+}
+.nav-links{
+    width: 329px;
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+    z-index: 3;
+    position: absolute;
+    width: 100%;
+    padding: 22px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.452);
+}
+.nav-wrapper{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 1240px;
+    margin:auto
+
+}
+.navbar{
+    display: flex;
+    align-items: center;
+}
+.provide-button{
+    padding: 12px 21px 12px 21px;
+    text-transform: uppercase;
+    color:white;
+    font-weight: bold;
+    border: 2px white solid;
+    border-radius: 2px;
+    margin-left: 16px;
+    background-color: rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+}
+.sign-in{
+    padding: 14px 37px 14px 37px;
+    text-transform: uppercase;
+    color:white;
+    position: absolute;
+    right:0;
+    font-weight: bold;
+    background-color: #12BF77;
+    border-radius: 2px;
+    border: none;
+}
+.nav-buttons{
+    width: 375px;
+    /* display: flex; */
+    position: relative;
+}
+.search{
+    background-color: transparent;
+    border: 0;
+    margin-left: 40px
+
+}
+
+
+/* SLIDER */
+.slider{
+    /* background-color: black; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 850px;
+    background-color: black;
+}
+.sliderBG{
+    position: absolute;
+    background-color: black;
+    background-repeat:no-repeat;
+    background-size: cover 815px;
+    z-index: -1;
+    height: 850px;
+    width: 100%;
+}
+.section-wrapper{
+    width: 1240px;
+    position: relative;
+    margin: 0 auto;
+}
+.main-slide{
+    z-index: 3;
+    position: relative;
+    top: 419px;
+}
+.main-slide h1{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 56px;
+    font-weight: lighter;
+    color: white;
+    margin-bottom: 0;
+}
+.main-slide p{
+    font-family: 'Mulish', sans-serif;
+    color: rgba(255, 255, 255, 0.555);
+    font-size: 18px;
+    width: 520px;
+    margin-top: 10px;
+    line-height: 160%;
+}
+.slider-links{
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+}
+.slider-links a{
+    display: flex;
+    align-items: center;
+    width: 60px;
+}
+.slider-links p{
+    margin-left: 10px;
+}
+.tegs a{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 8px 15px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    opacity: 0.5;
+    border-radius: 3px;
+}
+.next, .prev{
+    width: 42px;
+    height: 42px;
+    background-color: transparent;
+    border: none;
+}
+.slider-bottoms{
+    position: absolute;
+    display: flex;
+    z-index: 4;
+    right: 0%;
+    top: 619px;
+}
+.prev{
+    background-image: url('../svg/prev.svg');
+    background-repeat: no-repeat;
+}
+.next{
+    background-image: url('../svg/next.svg');
+    background-repeat: no-repeat;
+}
+.hide{
+    display:none;
+}
+.show{
+    display: block;
+}
+.indicators{
+    display: flex;
+    list-style:none;
+    padding: 0;
+    align-items: center;
+    margin: 0px 17px;
+    /* justify-content: space-between; */
+}
+.fadeIn{
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+}
+.fadeOut{
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+}
+@keyframes fadeIn{
+    0%{opacity: 0.1;}
+    100%{opacity:1;}
+};
+/* news-cards */
+
+.news{
+    background-color: #1D2029;
+
+    display: flex;
+}
+.news-container{
+    display: flex;
+    justify-content: space-between;
+}
+.news-card{
+    width: 400px;
+    height: 240px;
+    border-radius: 5px;
+    padding: 0px 22px;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 31px;
+    z-index: 4;
+    cursor: pointer;
+}
+.news-card:first-child{
+    background-image: url('../png/news-card-1.png');
+    background-repeat: no-repeat;
+}
+.news-card:first-child:hover,
+.news-card:nth-child(2):hover,
+.news-card:nth-child(3):hover{
+    border: #ffffff00 solid 3px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.news-card:nth-child(2){
+    background-image: url('../png/news-card-2.png');
+    background-repeat: no-repeat;
+
+}
+.news-card:nth-child(3){
+    background-image: url('../png/news-card-3.png');
+    background-repeat: no-repeat;
+
+}
+.news{
+    background-color: #1D2029;
+    display: flex;
+    padding-bottom: 60px;
+}
+.news-card .tegs{
+    position: relative;
+    top:155px;
+}
+.news-card h1{
+    position: relative;
+    top:165px;
+    /* Star Wars: Fallen Order review */
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    /* identical to box height */
+
+    color: #FFFFFF;
+}
+.line{
+    position: relative;
+    top: 55px;
+    width: 1240px;
+    height: 2px;
+    background-image: url('../png/news-line.png');
+}
+/* smoke */
+.smoke{
+    position: absolute;
+    top:716px;
+    width: 100%;
+    background-image: url('../png/smoke.png');
+    height: 149px;
+    z-index: 3;
+}
+
+/* LATEST NEWS */
+
+.latest-news{
+    background-color: #1D2029;
+    padding: 80px;
+}
+.latest-news .line{
+    position: relative;
+    top: 80px;
+}
+.latest-news h1{
+    /* Latest News */
+    font-family: 'Fjalla One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 53px;
+    /* identical to box height */
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.latest-news-header{
+    display: flex;
+    justify-content: space-between;
+}
+.latest-news-header .tegs{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    height: 74px;
+}
+.latest-news-header .tegs a{
+    margin: 0px 5px; 
+}
+.latest-news-header .tegs p{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height */
+    text-transform: uppercase;
+    margin-right:5px;
+    color: #FFFFFF;
+
+    opacity: 0.2;
+}
+.news-cards-block{
+    width: 820px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.news-card-main{
+    width: 820px;
+    height: 320px;
+    padding:22px;
+    box-sizing: border-box;
+    margin-bottom: 23px;
+    border-radius: 8px;
+    background-image: url('../png/news-card-main.png');
+    background-repeat: no-repeat;
+}
+.news-card-main:hover{
+    border: #ffffff00 solid 3px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.news-card-secondary1{
+    width: 400px;
+    height: 320px;
+    border-radius: 8px;
+    padding:22px;
+    box-sizing: border-box;
+    background-image: url('../png/news-card-secondary1.png');
+    background-repeat: no-repeat;
+}
+.news-card-secondary2{
+    width: 400px;
+    height: 320px;
+    border-radius: 8px;
+    padding:22px;
+    box-sizing: border-box;
+    background-image: url('../png/news-card-secondary2.png');
+    background-repeat: no-repeat;
+}
+.news-card-secondary1:hover,
+.news-card-secondary2:hover{
+    border: #ffffff00 solid 3px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.news-cards-block h1{
+    /* This Week's Forza Horizon 4 Season Change: Transit of Winter */
+    position: relative;
+    top:190px;
+    width: 419px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: none;
+    color: #FFFFFF;
+    z-index: 5;
+
+}
+.news-card-secondary1 h1,
+.news-card-secondary2 h1{
+    width: 316px;
+}
+.news-cards-block .tegs{
+    position: relative;
+    top: 180px;
+}
+.news-smoke1{
+    position: absolute;
+    top: 300px;
+    opacity: 0.9;
+}
+.news-smoke2{
+    position: absolute;
+    top: 650px;
+    opacity: 0.9;
+}
+.flex-news-container{
+    display: flex;
+}
+.news-list-block{
+    z-index: 5;
+    width: 400px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    margin-left: 22px;
+    background-color: #232731;
+    border-radius: 8px;
+}
+.news-list a:first-child{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    text-transform: none;
+    font-size: 16px;
+    line-height: 170%;
+    margin: 0;
+    /* or 27px */
+    color: #FFFFFF;
+}
+.news-list .likes{
+    margin-top:0;
+}
+.news-list a:hover{
+    color: #12BF77;
+    transition: 0.3s;
+}
+.news-list-links{
+    display: flex;
+    margin-top:15px;
+}
+.news-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.news-list li{
+    width: 336px;
+    list-style: none;
+    padding-top: 24px;
+    margin-right:0px;
+    padding-bottom: 25px;
+    box-sizing: border-box;
+    border-bottom: rgba(255, 255, 255, 0.068) solid 1px;
+}
+.news-list-links a{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-top: 15px;
+    height: 18px;
+    padding-right: 17px;
+}
+.news-list-links a p{
+    margin: 0;
+    margin-left: 8px;
+    color: white;
+    opacity: .4;
+}
+.news-list-links a img{
+    opacity: .4;
+}
+.show-all-news{
+    width: 300px;
+    box-sizing: border-box;
+    border:#12BF77 solid 1px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 20px 180px 20px 22px;
+    margin-top: 80px;
+    position: relative;
+    top:50px;
+}
+.show-all-news:hover{
+    background-color: #12BF77;
+    color: #1D2029;
+    transition: 0.3s;
+}
+.live-block{
+    background-color: #1D2029;
+    padding-top:80px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+}
+.twitch-player{
+    border-radius: 8px;
+}
+.live-block h1:first-child{
+    margin:0;
+    /* Live */
+    font-family: 'Fjalla One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 53px;
+    /* identical to box height */
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.live-block h1:first-child::after{
+    content: '';
+    width: 9px;
+    height: 9px;
+    margin: 0 0 10px 14px;
+    border-radius: 50%;
+    background-color: #ff0000;
+    display: inline-block;
+}
+.stream-info{
+   width: 400px;
+   height: 447px; 
+   background-color: #232731;
+   border-radius: 8px;
+}
+.stream-content{
+    display: flex;
+    padding-top: 32px;
+}
+.streamer-container{
+    padding: 32px;
+    box-sizing: border-box;
+
+}
+.streamer-container h2{
+    /* WELOVEGAMES */
+
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 170%;
+    /* or 27px */
+    margin: 0;
+    color: #FFFFFF;
+}
+.streamer-info h2::after{
+    content:"•";
+    margin: 5px;
+    width: 5px;
+    height: 5px;
+    color:#12BF77;
+    border-radius: 50%;
+}
+.streamer-avatar{
+    width: 48px;
+    height: 48px;
+    background-color: #12BF77;
+    border-radius: 50%;
+    display: inline-block;
+    background-image: url('../png/streamer-avatar.png');
+}
+.streamer-info{
+    display: flex;
+    position: relative;
+}
+.streamer-info h2{
+    margin-left: 16px;
+}
+.streamer-container h3{
+    /* CODE VEIN */
+    position: relative;
+    left:16px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 170%;
+    margin: 0;
+    /* identical to box height, or 24px */
+    color: #12BF77;
+}
+.streamer-container p{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+.streamer-profiles{
+    background-color: #1F232D;
+    position: absolute;
+    bottom:0;
+    width: 400px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 0 32px;
+    box-sizing: border-box;
+}
+.streamer-profiles p{
+    /* Streamer Profiles: */
+
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    /* or 22px */
+
+    color: #FFFFFF;
+
+    opacity: 0.6;
+
+}
+.links a:first-child{
+    background-image: url('../svg/Twitch_logo\ 1.svg');
+    background-repeat: no-repeat;
+}
+.links a:nth-child(2){
+    background-image: url('../svg/ingram.svg');
+    background-repeat: no-repeat;
+}
+.links a:nth-child(3){
+    background-image: url('../svg/Twitter.svg');
+    background-repeat: no-repeat;
+}
+.links a{
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+}
+.live-block .line{
+    position: relative;
+    top:50px;
+}
+/* //SHEDULE */
+.carousel-slider{
+    width: 200%;
+    display: flex;
+}
+.releases-block{
+    background-color: #1D2029;
+    padding-top: 80px;
+    padding-bottom: 105px;
+}
+.releases-block h1{
+    margin:0;
+    /* upcoming releases */
+    font-family: 'Fjalla One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 53px;
+    /* identical to box height */
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.carousel-wrapper{
+    width: 1240px;
+    height: 483px;   
+    box-sizing: border-box;
+    margin:auto;
+    margin-top:50px;
+    overflow: hidden;
+}
+.carousel-slider{
+    display: flex;
+    transition: .5s all;
+}
+.slide-card{
+    margin: 0 11px;
+    width: 231px;
+    height: 475px;
+}
+.slide-card h2{
+    /* Pokémon Mystery Dungeon: Rescue Team DX */
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.slide-card h3{
+/* 6 March, 2020 */
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 170%;
+    /* or 24px */
+    text-align: center;
+    color: #12BF77;
+}
+.releases-block .section-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.releases-block .next,
+.releases-block .prev,
+.shedule-block .prev,
+.shedule-block .next{
+    padding: 0;
+    z-index: 4;
+    width: 30px;
+    height: 30px;
+    
+}
+.releases-block .next:hover,
+.releases-block .prev:hover,
+.shedule-block .next:hover,
+.shedule-block .prev:hover{
+    background-color: #ffffff59;
+    transition: .3s;
+    
+}
+.releases-block .next,
+.shedule-block .next{
+    background-image: url('../svg/next-button\ carousel-slider.svg');
+    background-repeat: no-repeat;
+    background-size:37px;
+    background-position-x: -4px;
+}
+.releases-block .prev,
+.shedule-block .prev{
+    background-image: url('../svg/prev-button\ carousel-slider.svg');
+    background-repeat: no-repeat;
+    background-size:37px;
+    background-position-x: -4px;
+}
+
+/* SHEDULE */
+
+.shedule-block{
+    background-color: #1D2029;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+.shedule-block h1{
+/* Group 38 */
+    margin: 0;
+    font-family: 'Fjalla One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 43px;
+    /* identical to box height */
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+}
+.shedule-block .section-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.shedule-block .slide-card{
+    width: 413px;
+    height: 114px;
+    margin: 0;
+    position: relative;
+}
+.shedule-block .carousel-wrapper{
+    height: auto;
+}
+.shedule-block .date{
+    /* Today, 10:30 PM */
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 170%;
+    /* identical to box height, or 24px */
+    color: #12BF77;
+    position: absolute;
+    top: 20px;
+    left: 32px;
+
+
+}
+.shedule-block .game{
+    /* D&D 142: Here we go again */
+    font-family: 'Fjalla One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    /* identical to box height */
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: absolute;
+    top: 50px;
+    left: 32px;
+}
