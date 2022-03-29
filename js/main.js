@@ -198,3 +198,61 @@ prevSheduleCarousel.addEventListener('click', () =>{
     }
     sheduleCarouselSlider.style.transform = `translateX(-${sheduleOffset}px)`;
 });
+
+
+
+
+const message = {
+    // loading: './img/form/spinner.svg',
+    success: 'Спасибо!',
+    failure: 'Что-то пошло не так'
+};
+
+
+const form = document.querySelectorAll('footer form');
+
+
+form.forEach(item => {
+    bindPostData(item);
+});
+
+const postData = async(url, data) => {
+        const res = await fetch(url, {
+        method: "POST",
+        headers: {
+            'Content-type': 'application/json'
+        },
+        body: data
+        });
+
+        return await res.json();   
+};
+
+function showMessage(messageStatus){
+    const statusMessage = document.createElement('p');
+            statusMessage.append(messageStatus);
+            statusMessage.style.cssText = `
+                display: block;
+                color: white;
+            `;
+            form.append(statusMessage);
+}
+
+function bindPostData(form){
+    form.addEventListener('submit', (e) =>{
+        e.preventDefault();
+
+        const formData = new FormData(form);
+        const json = JSON.stringify(Object.fromEntries(formData.entries()));
+
+        postData('http://localhost:3000/requests', json)
+        .then(data => {
+            showMessage(message.success);
+        }).catch(() => {
+            showMessage(message.failure);
+        });
+        // .finally(() => {
+        //     form.reset();
+        // }); 
+    }); 
+}

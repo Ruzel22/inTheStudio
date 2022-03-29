@@ -805,3 +805,112 @@ nav{
     top: 50px;
     left: 32px;
 }
+footer{
+    background-color: #191C23;
+
+}
+
+.footer-text h1{
+    /* subscribe to newsletter */
+
+    margin:0;
+    font-family: 'Fjalla One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 53px;
+    /* identical to box height */
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+
+}
+footer p{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+    color: #FFFFFF;
+    margin:0;
+    
+    opacity: 0.6;
+}
+.footer-section{
+    
+}
+.footer-section:nth-child(1){
+    padding:59px;
+}
+.footer-section:nth-child(2){
+    padding:45px;
+    background-color: #13151B;
+}
+footer .section-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer button{
+    padding: 22px;
+    height: 100%;
+    background-color: transparent;
+    border: 2px #12BF77 solid;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    /* identical to box height, or 14px */
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: absolute;
+    right: 0;
+}
+footer .nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+footer .logo{
+    background-image: url('../svg/logo.svg');
+    width: 225px;
+    height: 42px;
+}
+footer .nav-links a{
+    /* NEWS */
+  /* MEDIA */
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    /* identical to box height */
+    text-transform: uppercase;
+    color: #ffffff6b;
+}
+footer input{
+    /* SUbSCRibe */
+    width: 483px;
+    height: 67px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    text-transform: none;
+    /* identical to box height, or 14px */
+    color: #FFFFFF;
+    background-color: #22262F;
+    border: none;
+    padding: 22px;
+    box-sizing: border-box;
+}
+footer form{
+    position: relative;
+}
+footer button{
+    
+}
